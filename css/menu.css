@@ -1,0 +1,243 @@
+@keyframes activeHome {
+    from {background-color: white; width: 68px; height: 68px;}
+    to {background-color: #f55d3e; width: 90px; height: 90px;}
+}
+
+@keyframes revertHome {
+    from {background-color: #f55d3e; width: 90px; height: 90px;}
+    to {background-color: white; width: 68px; height: 68px;}
+}
+
+@keyframes activeProjects {
+    from {background-color: white; width: 68px; height: 68px;}
+    to {background-color: #76bed0; width: 90px; height: 90px;}
+}
+
+@keyframes revertProjects {
+    from {background-color: #76bed0; width: 90px; height: 90px;}
+    to {background-color: white; width: 68px; height: 68px;}
+}
+
+@keyframes activeResume {
+    from {background-color: white; width: 68px; height: 68px;}
+    to {background-color: palevioletred; width: 90px; height: 90px;}
+}
+
+@keyframes revertResume {
+    from {background-color: palevioletred; width: 90px; height: 90px;}
+    to {background-color: white; width: 68px; height: 68px;}
+}
+
+@keyframes activeContact {
+    from {background-color: white; width: 68px; height: 68px;}
+    to {background-color: #f7bd15; width: 90px; height: 90px;}
+}
+
+@keyframes revertContact {
+    from {background-color: #f7bd15; width: 90px; height: 90px;}
+    to {background-color: white; width: 68px; height: 68px;}
+}
+
+@keyframes homeContent {
+    from {background-color: white;}
+    to {background-color: #f55d3e;}
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 5fr 0fr; 
+}
+
+.menu {
+    display: grid;
+    height: 95vh;
+    width: 30vh;
+}
+
+.content {
+    /* background-color: #f55d3e; */
+    display: inline;
+}
+
+#Home{
+    background-color: #f55d3e;
+    display: block;
+    height: 95vh;
+}
+
+#Projects {
+    background-color: #76bed0;
+    height: 95vh;
+    display: none;
+}
+
+#Resume {
+    background-color: #76bed0;
+    height: 95vh;
+    display: none;
+}
+
+#Contact {
+    background-color: #76bed0;
+    height: 95vh;
+    display: none;
+}
+
+.name {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    padding-left: 5px;
+    padding-top: 15px;
+}
+
+#profilePhoto {
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 7vh;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 60px;
+}
+
+.squares {
+    grid-gap: 0px;
+}
+
+#home {
+    transform: rotate(315deg);
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#projects {
+    transform: rotate(315deg);
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+#resume {
+    transform: rotate(315deg);
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#contact {
+    transform: rotate(315deg);
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.squareHome {
+    width: 68px;
+    height: 68px;
+    border: 1px solid black;
+    transform: rotate(45deg);
+    margin: auto;
+    align-content: center;
+    background-color: white;
+    animation-name: revertHome;
+    animation-duration: 1s;
+}
+
+.squareSecondRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.squareProjects {
+    width: 68px;
+    height: 68px;
+    border: 1px solid black;
+    transform: rotate(45deg);
+    margin: auto;
+    align-content: center;
+    background-color: white;
+    animation-name: revertProjects;
+    animation-duration: 1s;
+}
+
+.squareResume {
+    width: 68px;
+    height: 68px;
+    border: 1px solid black;
+    transform: rotate(45deg);
+    margin: auto;
+    align-content: center;
+    background-color: white;
+    animation-name: revertResume;
+    animation-duration: 1s;
+}
+
+.squareContact {
+    width: 68px;
+    height: 68px;
+    border: 1px solid black;
+    transform: rotate(45deg);
+    margin: auto;
+    align-content: center;
+    background-color: white;
+    animation-name: revertContact;
+    animation-duration: 1s;
+}
+
+.socialMedia {
+    max-height: 50%;
+    margin-left: 5vh;
+    justify-content: center;   
+}
+
+.squareHome-active {
+    border: 1px solid black;
+    transform: rotate(45deg);
+    margin: auto;
+    align-content: center;
+    animation-name: activeHome;
+    animation-duration: 2s;
+    width: 90px;
+    height: 90px;
+    background-color: #f55d3e;
+}
+
+.squareProjects-active {
+    border: 1px solid black;
+    transform: rotate(45deg);
+    margin: auto;
+    align-content: center;
+    animation-name: activeProjects;
+    animation-duration: 2s;
+    width: 90px;
+    height: 90px;
+    background-color: #76bed0;
+}
+
+.squareResume-active {
+    border: 1px solid black;
+    transform: rotate(45deg);
+    margin: auto;
+    align-content: center;
+    animation-name: activeResume;
+    animation-duration: 2s;
+    width: 90px;
+    height: 90px;
+    background-color: palevioletred;
+}
+
+.squareContact-active {
+    border: 1px solid black;
+    transform: rotate(45deg);
+    margin: auto;
+    align-content: center;
+    animation-name: activeContact;
+    animation-duration: 2s;
+    width: 90px;
+    height: 90px;
+    background-color: #f7bd15;
+}
+
+.home-Active {
+    animation-name: homeContent;
+    animation-duration: 2s;
+    background-color: #f55d3e;
+}
+

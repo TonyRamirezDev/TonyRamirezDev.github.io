@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Cheque';
+    src: url("fonts/cheque-regular-webfont.woff") format("woff");
+    }
+
+@font-face {
+    font-family: 'Butler';
+    src: url("fonts/butler-regular-webfont.woff") format("woff");
+}
+
+body {
+    /* background: url("https://static.pexels.com/photos/460823/pexels-photo-460823.jpeg"); */
+    background: url("https://static.pexels.com/photos/574073/pexels-photo-574073.jpeg");
+    background-size: 100%;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Cheque';
+    color: black;
+    font-size: 35px;
+    border-bottom: 1px solid black;
+}
+
+/* .text {
+    position: relative;
+} */
+
+#aboutText {
+    color: black;
+    width: 75vh;
+    font-family: Helvetica,'Butler';
+    font-size: 20px;
+    align-content: center;
+}
+
+/* .about {
+    position: fixed;
+    padding-bottom: 10px;
+    bottom: 0;
+    right: 0;
+} */
