@@ -38,11 +38,6 @@
     to {background-color: white; width: 68px; height: 68px;}
 }
 
-@keyframes homeContent {
-    from {background-color: white;}
-    to {background-color: #f55d3e;}
-}
-
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -57,7 +52,7 @@
 
 .content {
     /* background-color: #f55d3e; */
-    display: inline;
+    display: block;
 }
 
 #Home{
@@ -235,9 +230,5 @@
     background-color: #f7bd15;
 }
 
-.home-Active {
-    animation-name: homeContent;
-    animation-duration: 2s;
-    background-color: #f55d3e;
-}
+
 

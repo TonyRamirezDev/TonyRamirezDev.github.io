@@ -1,7 +1,14 @@
-.content {
-    background-color: #f55d3e;
+@font-face {
+    font-family: 'HKGrotesk';
+    src: url("fonts/HKGrotesk-Regular.woff") format("woff");
 }
 
-#title {
+#Home h1 {
+    font-size: 33px;
+}
+
+#Home {
+    font-family: 'HKGrotesk';
     color: white;
+    padding-left: 5vh;
 }
